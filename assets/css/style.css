@@ -8,25 +8,16 @@ span {
     color: red;
     font-weight: 900;
 }
-
-  section {
-    display: flex;
-    justify-content: center;
-  }
-
   .header img {
     margin-top: 110px;
     margin-left: 220px;
   }
-
   #navBar {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     margin: 0px 25%;
   }
-
- 
   .navigation {
     display: flex;
     width: 25%;
@@ -34,20 +25,10 @@ span {
     justify-content: start;
 
   }
-  .navigation p {
+p {
     cursor: crosshair;
     padding: 0 20px;
     text-decoration: red;
     font-weight: bold;
-  }
-  .icons {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 25%;
-  }
-  .icons img {
-    margin: 15px;
-    cursor: crosshair;
   }
 
