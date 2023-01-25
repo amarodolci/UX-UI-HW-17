@@ -30,11 +30,18 @@
 }
 body {
   width: auto;
-  display: flex;
+  display: grid;
   justify-content: center;
   background-color: black;
   font-family: 'Open Sans', sans-serif;
   color: white;
+}
+div {
+  display: flex;
+}
+
+#footer {
+  display: ;
 }
 span {
   color: red;
@@ -42,15 +49,17 @@ span {
 }
 .header {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 0px auto;
  
 }
 .header img {
   margin-top: 70px;
-  margin-left: 200%;
+  margin-left: -100px;
 }
 #navBar {
-  display: flex;
+  display: grid;
   flex-direction: row;
   align-items: flex-start;
   margin: 0px 25%; 
@@ -83,16 +92,34 @@ span {
   cursor: crosshair;
 }
 
-.hero h1 {
+#hero h1 {
   color: white;
-  font-weight: 100;
 }
-.hero section {
-  min-height: 860px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+#hero {
+  margin: 0px 5%;
+    display: grid;
+    grid-row-start: 3;
+    min-height: 500px;
+    /* height: 70vh; */
+    grid-template-rows: 75% 25%;
+    grid-template-columns: 75% 25%;
 }
-#intro {
-  
+.caseStudies {
+  margin: 0px 5%;
+    display: grid;
+    grid-row-start: 4;
+    min-height: 500px;
+    /* height: 70vh; */
+    grid-template-rows: 75% 25%;
+    grid-template-columns: 75% 25%;
+}
+#footer {
+  margin: 0px 5%;
+    display: grid;
+    align-items: flex-end;
+    grid-row-start: 5;
+    min-height: 500px;
+    /* height: 70vh; */
+    grid-template-rows: 75% 25%;
+    grid-template-columns: 75% 25%;
 }
