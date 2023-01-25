@@ -39,20 +39,12 @@ body {
 div {
   display: flex;
 }
-
-#footer {
-  display: ;
-}
 span {
   color: red;
   font-weight: 900;
 }
 .header {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin: 0px auto;
- 
 }
 .header img {
   margin-top: 70px;
@@ -81,28 +73,19 @@ span {
   text-decoration: red;
   font-weight: bold;
 }
-.icons {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 25%;
-}
-.icons img {
-  margin: 15px;
-  cursor: crosshair;
-}
-
-#hero h1 {
+#intro h1 {
   color: white;
+  font-weight: 100;
+  font-size: 54px;
 }
-#hero {
-  margin: 0px 5%;
+#intro {
     display: grid;
+  
     grid-row-start: 3;
-    min-height: 500px;
+    min-height: 860px;
     /* height: 70vh; */
-    grid-template-rows: 75% 25%;
-    grid-template-columns: 75% 25%;
+    grid-template-rows: 40% 20% 20%;
+    align-items: flex-end;
 }
 .caseStudies {
   margin: 0px 5%;
@@ -116,10 +99,45 @@ span {
 #footer {
   margin: 0px 5%;
     display: grid;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: start;
     grid-row-start: 5;
-    min-height: 500px;
-    /* height: 70vh; */
-    grid-template-rows: 75% 25%;
-    grid-template-columns: 75% 25%;
+    min-height: 70px;
+    /* height: 70vh; 
+    grid-template-rows: 75% 25%;*/
+    grid-template-columns: 100%;
+}
+hr {
+  margin: 0px;
+  display: block;
+  border: #f00 0.25px solid;
+}
+/* Typography CSS */
+
+h2 {
+  font-size: 60px;
+  margin: 0px 0px;
+  color: #FF6200;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 300;
+  margin: 0px 0px;
+}
+
+h4 {
+  color: white;
+  font-weight: 400;
+  font-size: 22px;
+}
+h5 {
+  color: #f00;
+  font-weight: 700;
+  font-size: 16px;
+}
+h6 {
+  color: white;
+  font-weight: 100;
+  font-size: 12px;
 }
