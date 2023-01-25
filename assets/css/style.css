@@ -34,14 +34,14 @@ section {
   width: 25%;
   font-weight: 500;
 }
-#navigation {
+.navigation {
   display: flex;
   width: 25%;
   align-items: center;
   justify-content: start;
 
 }
-#navigation p {
+.navigation p {
   cursor: crosshair;
   padding: 0 20px;
   text-decoration: red;
