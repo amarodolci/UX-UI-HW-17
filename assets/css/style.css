@@ -40,19 +40,21 @@ span {
   color: red;
   font-weight: 900;
 }
-section {
+.header {
   display: flex;
   justify-content: center;
+ 
 }
 .header img {
-  margin-top: 110px;
-  margin-left: 220px;
+  margin-top: 70px;
+  margin-left: 200%;
 }
 #navBar {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  margin: 0px 25%;
+  margin: 0px 25%; 
+ 
 }
 #navBar h1 {
   width: 25%;
