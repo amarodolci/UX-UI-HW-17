@@ -30,14 +30,6 @@ body {
   z-index: 100;
 }
 
-.heroGridArea {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  align-items: center;
-  display: flex;
-  position: relative;
-}
 
 span {
   color: red;
