@@ -15,6 +15,9 @@ body {
   padding: 25px;
   z-index: 100;
 }
+#headline h1 {
+  font-weight: 700;
+}
 span {
   color: red;
   font-weight: 900;
@@ -67,13 +70,23 @@ span {
 #heroGrid {
   display: grid;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   margin: 0px 25%;
   color: white;
   font-weight: 100;
-  font-size: 32px;
-  min-height: 500px;
+  font-size: 36px;
+  min-height: 600px;
   height: 70vh;
+}
+#bodyGrid {
+  display: grid;
+  flex-direction: row;
+  align-items: center;
+  margin: 0px 25%;
+  color: white;
+  font-weight: 100;
+  font-size: 36px;
+  height: 40vh;
 }
 #featuredWork {
   margin: 250px 25%;
@@ -96,7 +109,6 @@ span {
 }
 #myWork h1{
   font-size: 32px;
-  margin: 50px 0 150px 0;
   font-weight: 700;
 }
 #myWork {
