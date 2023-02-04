@@ -38,24 +38,16 @@ body {
   display: flex;
   position: relative;
 }
-#casestudyGrid {
-  margin: 0px 25%;
-  display: grid;
-  grid-template-rows: 600px 300px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas:
-  "heroImage"
-  "title description link"
-  ;
-}
+
 span {
   color: red;
   font-weight: 900;
 }
 
 #navBar {
-  display: grid;
+  display: flex;
   flex-direction: row;
+  justify-content: flex-end;
   align-items: flex-start;
   margin: 0px 25%; 
  
@@ -84,41 +76,37 @@ span {
 }
 
 
-.caseStudies {
-  margin: 0px 25%;
-    display: grid;
-    grid-row-start: 1;
-    min-height: 500px;
-    /* height: 70vh; */
-    grid-template-rows: 75% 25%;
-    grid-template-columns: 100%;
-}
-#casestudyGrid {
-  margin: 0px 25%;
-  display: grid;
-  grid-template-rows: 300px 300px 300px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas:
-  "projecttitle"
-  "projectImage"
-  "description projectlink"
-  ;
-}
+.myWork {
+  margin: 0 25%;
 
-#description {
+}
+.myWork h1{
+  font-size: 32px;
+  margin: 50px 0 150px 0;
+  font-weight: 700;
+}
+.workGrid {
+  margin: 100px 0;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: max-content;
+  grid-template-areas: "heroImage description";
+}
+.heroImage img {
+  width: 650px;
+}
+.description {
   grid-area: description;
 
 }
-#projecttitle {
-  grid-area: projecttitle;
+.title {
+  grid-area: title;
 }
-#projectlink {
-  grid-area: projectlink;
+.link {
+  grid-area: link;
 }
 
-#projectImage {
-  grid-area: projectImage;
-}
+
 
 
 #navBar {
@@ -150,8 +138,8 @@ span {
 }
 
 /* Typography CSS */
-#introHero h1 {
-  
+h1 {
+  font-weight: 100;
 }
 #footer {
   margin: 0px 25%;
