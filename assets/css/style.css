@@ -6,7 +6,7 @@ body {
   color: white;
 }
 
-/* Grid CSS */
+/* Hero CSS */
 
 #heroGrid {
   display: grid;
@@ -20,8 +20,6 @@ body {
   height: 70vh;
   
 }
-
-
 #headline {
   position:relative;
   right: 0px;
@@ -29,13 +27,12 @@ body {
   padding: 25px;
   z-index: 100;
 }
-
-
 span {
   color: red;
   font-weight: 900;
 }
 
+/* Nav CSS */
 #navBar {
   display: flex;
   flex-direction: row;
@@ -53,6 +50,8 @@ span {
   margin-left: -70px;
   width: 150px;
   padding-right: 450px;
+  width: 100%;
+  position: relative;
 }
 #navigation {
   display: flex;
@@ -66,8 +65,8 @@ span {
   text-decoration: red;
   font-weight: bold;
 }
-
-
+  
+/* Grid CSS */
 .myWork {
   margin: 0 25%;
 
@@ -101,28 +100,7 @@ span {
 
 
 
-#navBar {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  margin: 0px 25%;
-}
-#navBar img {
-  width: 100%;
-  position: relative;
-}
-#navigation {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: space-evenly;
-}
-#navigation p {
-  cursor: pointer;
-  text-decoration: none;
-}
-  
-  
+
 
 .highlight {
   color: #FF0000;
