@@ -1,55 +1,58 @@
-@media only screen and (max-width: 1000px) {
-  #navigation {
-    display: none;
-  }
-  .icons {
-    margin-left: auto;
-  }
-}
-@media only screen and (max-width: 600px) {
-  #headline {
-    position: static;
-    margin: 20px;
-  }
-  #heroGrid {
-    grid-template-areas:
-    "featuredProduct featuredProduct"
-    "secondaryProduct CTA";
-  }
-  #categoryGrid {
-    grid-template-rows: 300px 300px 300px 300px 300px;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "bookcases"
-      "bedroom"
-      "patio"
-      "couches"
-      "desks"
-    ;
-  }
-}
+
 body {
-  width: auto;
-  display: grid;
-  justify-content: center;
+  
   background-color: black;
   font-family: 'Open Sans', sans-serif;
   color: white;
 }
-div {
+
+/* Grid CSS */
+
+#heroGrid {
+  display: grid;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: 0px 25%;
+  color: white;
+  font-weight: 100;
+  font-size: 32px;
+  min-height: 500px;
+  height: 70vh;
+  
+}
+
+
+#headline {
+  position:relative;
+  right: 0px;
+  top: 100px;
+  padding: 25px;
+  z-index: 100;
+}
+
+.heroGridArea {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
   display: flex;
+  position: relative;
+}
+#casestudyGrid {
+  margin: 0px 25%;
+  display: grid;
+  grid-template-rows: 600px 300px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "heroImage"
+  "title description link"
+  ;
 }
 span {
   color: red;
   font-weight: 900;
 }
-.header {
-  display: flex;
-}
-.header img {
-  margin-top: 70px;
-  margin-left: -100px;
-}
+
 #navBar {
   display: grid;
   flex-direction: row;
@@ -60,6 +63,12 @@ span {
 #navBar h1 {
   width: 25%;
   font-weight: 500;
+}
+#navBar img {
+  margin-top: 100px;
+  margin-left: -70px;
+  width: 150px;
+  padding-right: 450px;
 }
 #navigation {
   display: flex;
@@ -73,31 +82,79 @@ span {
   text-decoration: red;
   font-weight: bold;
 }
-#intro h1 {
-  color: white;
-  font-weight: 100;
-  font-size: 54px;
-}
-#intro {
-    display: grid;
-  
-    grid-row-start: 3;
-    min-height: 860px;
-    /* height: 70vh; */
-    grid-template-rows: 40% 20% 20%;
-    align-items: flex-end;
-}
+
+
 .caseStudies {
-  margin: 0px 5%;
+  margin: 0px 25%;
     display: grid;
-    grid-row-start: 4;
+    grid-row-start: 1;
     min-height: 500px;
     /* height: 70vh; */
     grid-template-rows: 75% 25%;
-    grid-template-columns: 75% 25%;
+    grid-template-columns: 100%;
+}
+#casestudyGrid {
+  margin: 0px 25%;
+  display: grid;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "projecttitle"
+  "projectImage"
+  "description projectlink"
+  ;
+}
+
+#description {
+  grid-area: description;
+
+}
+#projecttitle {
+  grid-area: projecttitle;
+}
+#projectlink {
+  grid-area: projectlink;
+}
+
+#projectImage {
+  grid-area: projectImage;
+}
+
+
+#navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 0px 25%;
+}
+#navBar img {
+  width: 100%;
+  position: relative;
+}
+#navigation {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#navigation p {
+  cursor: pointer;
+  text-decoration: none;
+}
+  
+  
+
+.highlight {
+  color: #FF0000;
+  font-weight: 900;
+}
+
+/* Typography CSS */
+#introHero h1 {
+  
 }
 #footer {
-  margin: 0px 5%;
+  margin: 0px 25%;
     display: grid;
     justify-content: center;
     align-items: start;
