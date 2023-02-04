@@ -8,18 +8,6 @@ body {
 
 /* Hero CSS */
 
-#heroGrid {
-  display: grid;
-  flex-direction: row;
-  align-items: flex-start;
-  margin: 0px 25%;
-  color: white;
-  font-weight: 100;
-  font-size: 32px;
-  min-height: 500px;
-  height: 70vh;
-  
-}
 #headline {
   position:relative;
   right: 0px;
@@ -67,15 +55,46 @@ span {
 }
   
 /* Grid CSS */
-.myWork {
-  margin: 0 25%;
 
+#heroGrid {
+  display: grid;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: 0px 25%;
+  color: white;
+  font-weight: 100;
+  font-size: 32px;
+  min-height: 500px;
+  height: 70vh;
 }
-.myWork h1{
+#featuredWork {
+  margin: 250px 25%;
+  
+  
+}
+#flexWork {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 1fr;
+  align-items: flex-start;
+}
+.flexProject img {
+  width: 300px;
+}
+#featuredWork h1{
   font-size: 32px;
   margin: 50px 0 150px 0;
   font-weight: 700;
 }
+#myWork h1{
+  font-size: 32px;
+  margin: 50px 0 150px 0;
+  font-weight: 700;
+}
+#myWork {
+  margin: 0 25%;
+}
+
 .workGrid {
   margin: 100px 0;
   display: grid;
@@ -84,7 +103,7 @@ span {
   grid-template-areas: "heroImage description";
 }
 .heroImage img {
-  width: 650px;
+  width: 750px;
 }
 .description {
   grid-area: description;
