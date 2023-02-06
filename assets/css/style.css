@@ -27,20 +27,26 @@ span {
 #navBar {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: flex-start;
   margin: 0px 25%; 
- 
+  position: sticky;
+}
+#logo {
+  position: sticky;
+  display: flex;
+  width: 150px;
+  
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 #navBar h1 {
   width: 25%;
   font-weight: 500;
 }
 #navBar img {
-  margin-top: 100px;
-  margin-left: -100px;
+  margin-top: 0px;
   
-  padding-right: 450px;
   width: 100%;
   position: relative;
 }
